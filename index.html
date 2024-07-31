@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 3</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Dark Mode</h1>
+    <div class="wrapper">
+      <span>Light</span>
+      <div class="switch">
+        <div class="ball"></div>
+      </div>
+      <span>Dark</span>
+    </div>
+    <script>
+      const sw = document.querySelector(".wrapper");
+      if (sw) {
+        sw.addEventListener("click", function swClickHandler() {
+          document.querySelector("body").classList.toggle("light");
+        });
+      }
+    </script>
+  </body>
+</html>
